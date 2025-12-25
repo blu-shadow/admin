@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DadaXWear Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="auth-screen" class="center-box">
+    <h2>🔐 Admin Access</h2>
+    <input type="password" id="passkey" placeholder="Enter pass key">
+    <button onclick="checkKey()">Access</button>
+    <p id="error"></p>
+</div>
+
+<div id="admin-panel" class="hidden">
+    <header>
+        <h1>DadaXWear Orders</h1>
+        <button onclick="clearOrders()">Clear Orders</button>
+    </header>
+
+    <div id="orders"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
